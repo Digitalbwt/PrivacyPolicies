@@ -140,4 +140,4 @@ Možemo povremeno ažurirati naša Pravila privatnosti. O svim promjenama ćemo 
 ### 8. Kontaktirajte nas
 Ako imate bilo kakvih pitanja ili sugestija u vezi sa našim Pravilima privatnosti, slobodno nas kontaktirajte.
 
-* **E-mail za kontakt:** `[Unesite e-mail adresu za podršku]`
+* **E-mail za kontakt:** `support@mail.bwaregroup.xyz`
