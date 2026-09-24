@@ -1,0 +1,130 @@
+PISTA PRIVACY POLICY
+
+Developer: Djordje Peric
+Company: bwaregroup
+Privacy contact: digitalnivuk@proton.me
+Last updated: September 24, 2026
+
+1. OVERVIEW
+
+Pista is an Android dashcam application. It records video segments, optionally records audio, records GPS telemetry when enabled, detects possible driving incidents, displays maps, and lets the user organize, export, protect, and share recordings. When the user starts recording, Pista uses a camera and location foreground service that can continue recording while the app is not visible or the screen is off. If audio is enabled and permitted, the microphone foreground-service type may also be used.
+
+Pista is designed to operate primarily on the user's device. Pista does not require an account and does not provide a first-party cloud account, cloud synchronization, advertising, or advertising analytics.
+
+This policy explains what Pista accesses, collects, uses, stores, and shares. It applies to the Pista Android application and its included libraries and services.
+
+2. INFORMATION PISTA ACCESSES OR COLLECTS
+
+Camera and video
+When the user grants camera permission and starts recording, Pista records video from the device camera into segmented MP4 files. Recordings can include people, vehicles, buildings, road signs, license plates, and other information visible in the camera's field of view.
+
+Pista uses recordings to provide the camera preview, recording, playback, clip management, incident context, export, and user-initiated sharing features. Pista does not upload recordings to a first-party server.
+
+Recordings and their metadata are stored in the app-specific Movies/PistaRecordings directory on the device. The associated metadata is stored in a JSON sidecar file with the same base name as the recording.
+
+Microphone and audio
+Pista requests microphone permission so that audio can optionally be included in recordings. Audio is recorded into the same MP4 segment as video. Audio is not recorded as a separate file.
+
+The user can disable audio recording in Settings. Audio is not recorded when audio is disabled or microphone permission is not granted. Audio included in a recording is subject to the same retention, export, sharing, and deletion practices as the recording.
+
+Pista does not upload microphone recordings to a first-party server.
+
+Location and GPS telemetry
+Pista requests fine and coarse location permission. The current version requires precise location access to enter the main app interface, even if GPS telemetry is later disabled in Settings. When the user enables GPS telemetry and grants location permission, Pista uses the device's location services, including the Google Play Services fused location provider, while recording to collect location information used for trip telemetry and maps.
+
+Depending on device and app settings, the location data used by Pista may include latitude and longitude, timestamp, speed, altitude, bearing, and location accuracy.
+
+Pista stores the start and end coordinates, speed statistics, and a decimated GPS track in the recording's JSON metadata. The map may also display a live location indicator based on the device's location provider.
+
+The user can disable GPS telemetry for recordings in Settings. Starting a user-initiated recording starts a camera and location foreground service that can continue while the app is not visible or the screen is off. On Android 10 and later, Pista also offers a separate background-location option after an explanation and affirmative user action; this option is intended to allow all-the-time location access. The ordinary recording service does not use the background-location permission as its only way to continue a user-started foreground-service recording.
+
+Pista does not upload stored GPS routes or recording telemetry to a first-party server. When the map is displayed, Pista may request map tiles from the OpenStreetMap tile service. Those tile requests can disclose network information, the requested map area or tile coordinates, and the configured Pista user agent to the tile provider. Pista does not intentionally submit the user's complete stored route to the tile provider.
+
+Accelerometer and incident data
+Pista uses the device accelerometer, when available, to detect possible impacts and hard-braking events while recording. Raw accelerometer samples are processed in memory for detection. Pista may store derived incident information in the recording metadata, such as event time, peak acceleration, event severity, estimated velocity change, and associated location, speed, and recording information.
+
+Pista does not upload raw accelerometer samples or incident records to a first-party server.
+
+App settings and local app data
+Pista stores preferences and app state on the device, including storage limits, recording segment duration, audio and GPS settings, video resolution, incident settings, crash-report preference, and background-location prompt state.
+
+Pista stores recordings, metadata, exports, map tile cache data, and settings in app-specific storage. The app does not require or create a Pista user account.
+
+3. PERMISSIONS AND USER CHOICES
+
+Pista requests permissions only for features that require them:
+
+- Camera: records video and provides the camera preview.
+- Microphone: optionally records audio with video.
+- Location: records GPS telemetry, shows the live map position, and supports route-related features.
+- Background location: optionally allows all-the-time recording-related location access after a separate user explanation and affirmative action.
+- Notifications: displays recording and export status notifications, including recording duration, speed, lock state, and incident alerts.
+- Wake lock and foreground service permissions: keep the user-started recording service active while the app is not visible and allow its camera, location, and optional microphone functions.
+- Internet and network state: retrieves map tiles and, when enabled, sends optional crash diagnostics.
+
+The user can grant or revoke permissions through Android system settings. Pista also provides controls to start and stop recording, enable or disable audio, enable or disable GPS telemetry, delete individual clips, protect or unprotect clips, adjust the storage limit, and enable or disable crash-report transmission.
+
+Pista does not access contacts, SMS messages, call logs, phone numbers, phone state, the media library, or advertising identifiers based on the current app permissions and source code.
+
+4. HOW INFORMATION IS SHARED
+
+Pista does not sell personal or sensitive user data. Pista does not use the information for advertising.
+
+User-initiated sharing
+When the user chooses to share a recording or exported video, Android's system share sheet is displayed. The user selects the receiving application. The selected application may copy, store, upload, or otherwise process the shared file under its own privacy policy.
+
+A shared file may contain video and any included audio, selected trimmed content, speed, time, GPS-status, or lock information shown in an exported video, and any other visual or audible information contained in the recording.
+
+Pista does not attach the JSON GPS sidecar file when sharing a recording. The user is responsible for reviewing the selected receiving application and the file before sharing it.
+
+OpenStreetMap tile provider
+When the map is used, Pista downloads map tiles from the OpenStreetMap tile service. The tile provider may receive the request's network information, the requested map area or tile coordinates, and the Pista user agent. This is separate from uploading Pista's stored recording route.
+
+Google Play Services and Android location providers
+Pista uses the device's installed Google Play Services fused location provider to obtain location updates for recording telemetry. The map also uses Android's location manager to display a live position, including GPS and network location providers. These providers may process network and device information as part of providing Android location services. Pista does not control or replace the privacy practices of Google Play Services or Android location providers.
+
+Optional Sentry crash diagnostics
+Pista includes an optional Sentry integration. Crash-report transmission is disabled by default and takes effect according to the user's preference. In builds configured with a Sentry DSN, enabling crash reports allows technical crash and diagnostic information to be sent to Sentry for debugging. The release build currently has no Sentry DSN configured, so Sentry transmission is not active in that build.
+
+When Sentry is configured, Pista disables default personal information, automatic session tracking, and transaction sampling. Pista also applies a diagnostic filter intended to redact GPS-related fields and coordinate pairs, storage and application data paths, content and file URIs, and Pista recording paths. This filter is not an allowlist, so technical context generated by the SDK may still include limited device and app information such as operating-system and device details, app release information, connectivity information, timestamps, process and thread information, error details, and stack traces. Pista does not intentionally attach recordings, audio files, GPS tracks, or incident files to Sentry. Turning crash reports off stops the app from sending further diagnostic events after the setting is applied; events already received are handled according to the retention settings of the Sentry service used for the applicable build.
+
+Android backup and device transfer
+Android backup and device-transfer features may be enabled by the operating system or user. Pista's configured backup rules exclude original recordings, the map tile cache, and the database domain. Exported videos, app preferences, and other files not explicitly excluded may be included in backup or device transfer according to Android version, device settings, and available storage. Users can control backup and transfer through Android system settings.
+
+5. DATA RETENTION AND DELETION
+
+Recordings
+Recordings are retained on the device until the user deletes them, the app's configured storage limit causes older unprotected clips to be removed, or available device storage becomes critically low. When automatic cleanup is needed, Pista generally removes the oldest eligible finalized recordings first. Recordings that are active, being exported, or protected by the user are not removed by normal rolling cleanup.
+
+The user can delete an individual recording from the clip gallery. Deleting a recording removes its MP4 file and its JSON metadata. Manually protected recordings do not automatically expire. Recordings protected automatically by an incident become eligible for automatic unlocking after 48 hours, but Pista removes them only when storage cleanup is needed.
+
+Exported videos
+Completed exports are retained for up to seven days or until they are among the ten newest exports, whichever occurs first. Temporary partial export files are removed when an export is cancelled, fails, or is cleaned up at startup.
+
+Settings and caches
+Settings remain on the device until the user changes them, clears the application's data, or uninstalls the app. Map tile cache data is stored in the app's internal cache and may be removed by Android or when the app's data is cleared.
+
+Diagnostic data
+Crash-report retention and deletion after transmission are controlled by the Sentry service configuration used for the applicable app build. The current release has no Sentry DSN configured and therefore does not generate Sentry diagnostic data. Any future build that enables Sentry must have its retention period configured and this policy updated before release. Users who have enabled crash reports in such a build can disable further transmission in Pista Settings; users can also contact the developer using the address above for assistance.
+
+6. SECURITY
+
+Pista stores app data in Android app-specific storage and uses Android's permission system to control access to camera, microphone, location, and notifications. Network requests made by the map and optional diagnostics integrations use encrypted HTTPS connections where provided by those services.
+
+Pista does not provide a first-party remote account system or cloud storage endpoint. No representation is made that local device data is immune from all security risks; users should protect their device and use Android security features appropriate to their environment.
+
+7. CHILDREN
+
+Pista is not directed specifically to children. Pista does not knowingly collect personal information from children through an account or child-directed service. Users should supervise device use and recording activity, especially when recordings could capture people or private spaces.
+
+8. CHANGES TO THIS POLICY
+
+We may update this policy when the app, its permissions, libraries, or data practices change. The Last updated date will be changed when an update is made. Significant changes will be reflected in the version of the policy published for the app.
+
+9. CONTACT US
+
+If you have a privacy question, request, or concern about Pista, contact:
+
+Djordje Peric
+bwaregroup
+digitalnivuk@proton.me
