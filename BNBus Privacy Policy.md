@@ -1,143 +1,237 @@
 # Privacy Policy for BNBus
 
-**Effective Date:** June 14, 2026
+**Effective Date:** November 8, 2026  
+**Last Updated:** November 8, 2026
 
-This Privacy Policy describes how BNBus ("we", "our", or "us") collects, uses, and shares information when you use our mobile application, BNBus (the "App").
+This Privacy Policy describes how BNBus ("we", "our", or "us") collects, uses, processes, and protects information when you use our mobile application, BNBus, and its progressive web app (collectively, the "App").
 
-By installing and using the App, you agree to the collection and use of information in accordance with this Privacy Policy.
+By installing, accessing, or using the App, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree with this policy, please do not use the App.
 
 ---
 
 ## English Version
 
 ### 1. About the App
-BNBus is a public transportation assistant app designed for the city of **Bijeljina, Bosnia and Herzegovina**. The App provides offline and online timetables, route mapping, and station information to help users navigate public transit.
+BNBus is a public transportation assistant app designed for the city of **Bijeljina, Bosnia and Herzegovina**. The App provides offline and online timetables, route mapping, bus arrival predictions, and station information to help citizens and visitors navigate the local public transit system efficiently.
 
-### 2. Information We Collect and Use
-We prioritize your privacy and aim to collect as little personal data as possible.
+### 2. Information We Collect and How We Use It
+We are committed to user privacy. We do not sell your personal data, nor do we track you across external websites or services.
 
-#### a) Personal Data
-We do not require you to create an account, register, or provide any personally identifiable information (such as your name, email address, phone number, or contact list) to use the App.
+#### a) No Personal Identifiable Information (PII)
+We do not require you to create an account, register, or provide any personally identifiable information (such as your full name, email address, physical address, phone number, payment details, or contacts) to use the App.
 
-#### b) Offline Functionality & Cached Data
-The core features of the App, such as viewing timetables and basic route lookups, are designed to work offline. Any preferences or cached data (such as recently viewed lines or stations) are stored locally on your device and are not transmitted to our servers.
+#### b) Anonymous Usage & Transit Analytics
+To understand passenger demand, detect underserved areas, and continuously improve public transit routes, schedules, and service quality in Bijeljina, the App collects **anonymized usage analytics**.
 
-#### c) Network & Connection Data
-The App requires network access to:
-* Load dynamic map tiles (e.g., CartoDB Voyager map tiles).
-* Display advertisements served through Google AdMob.
+This data includes:
+* **Search queries:** In-app searches for bus lines, bus stops/stations, and points of interest.
+* **Content views:** Views of specific bus lines, timetables, and station departure schedules.
+* **Route inquiries:** Starting and destination points entered for transit route planning.
+* **Technical & diagnostic metadata:** Anonymously generated random session identifiers (a locally generated random string, not tied to hardware serial numbers, IMEI, or Google Advertising ID), device platform/operating system (e.g., Android, Web), and application version.
+* **Timestamps:** UTC time of user interactions to analyze peak transit inquiry hours.
+
+**Purpose of processing:**
+* Optimizing bus line routes, frequencies, and departure intervals according to actual citizen transit demand.
+* Improving timetable accuracy and app navigation.
+* Identifying technical bugs, application errors, and performance bottlenecks.
+
+**Anonymity guarantee:**
+* This analytics data is pseudonymous and aggregated. It cannot be used to personally identify any individual user.
+* We do not combine usage analytics with any external databases or marketing profiles.
+
+#### c) Location Data (GPS)
+If you grant the App location permission (`ACCESS_FINE_LOCATION` or `ACCESS_COARSE_LOCATION`), your device GPS coordinates are used **strictly on-device in real time** to show your position relative to nearby bus stops on the interactive map.
+* **We do not track, store, or transmit your precise GPS coordinates or location history to our servers.**
+* Location features are completely optional. You can deny or revoke location access at any time in your device settings without losing access to timetables and route search.
+
+#### d) Offline Functionality & Cached Data
+The core features of the App, such as viewing timetables and station lists, are engineered to function offline. Downloaded transit schedules and your preferences are cached locally on your device for rapid offline retrieval.
+
+#### e) Network & Connection Data
+The App requires active network connectivity to:
+* Download and display dynamic map tiles (e.g., CartoDB / OpenStreetMap).
+* Synchronize updated bus schedules from our server.
+* Transmit anonymized usage analytics batches securely via HTTPS.
+* Load non-personalized or personalized advertisements through Google AdMob.
 
 ---
 
 ### 3. Device Permissions
-To perform its functions, the App requests the following permissions from your mobile device:
-* **`INTERNET`** (`android.permission.INTERNET`): Allows the App to download map tiles and load advertisements.
-* **`ACCESS_NETWORK_STATE`** (`android.permission.ACCESS_NETWORK_STATE`): Allows the App to check whether an internet connection is active before attempting network requests.
+To function properly, the App may request the following permissions on your device:
+* **`INTERNET`** (`android.permission.INTERNET`): Enables downloading updated schedule data, loading map tiles, transmitting anonymous analytics, and loading advertisements.
+* **`ACCESS_NETWORK_STATE`** (`android.permission.ACCESS_NETWORK_STATE`): Allows the App to verify active network connectivity prior to initiating network requests, preventing unnecessary battery and data consumption.
+* **`ACCESS_COARSE_LOCATION` / `ACCESS_FINE_LOCATION`** *(Optional)*: Used solely on-device to center the map on your location and highlight nearby bus stops.
 
 ---
 
 ### 4. Third-Party Services & Advertising (Google AdMob)
-We use Google AdMob to display advertisements in the App. AdMob is a mobile advertising service provided by Google LLC.
+We use Google AdMob, a mobile advertising platform provided by Google LLC, to display advertisements within the App.
 
-To serve advertisements, Google AdMob may collect and process certain information from your device, including:
-* **Device identifiers** (such as Android Advertising ID or iOS Identifier for Advertisers - IDFA).
-* **IP address** (used to estimate general location and for security/fraud prevention).
-* **Device info** (make, model, operating system version, language, etc.).
-* **Ad interaction data** (clicks, views, impressions).
+To serve relevant ads and safeguard against fraudulent activity, Google AdMob may automatically collect and process certain device information, including:
+* **Advertising identifiers** (such as Google Advertising ID or IDFA).
+* **IP address** (used for general geographic region estimation and fraud prevention).
+* **Device metadata** (model, operating system version, carrier, screen size, language).
+* **Ad interaction metrics** (impressions, clicks, viewability).
 
-This data is collected directly by the Google AdMob SDK. We do not have access to, nor do we store, this data. Google may use this data to show personalized or non-personalized advertisements, depending on your device settings and local regulations (such as GDPR).
+This data is handled directly by Google under Google's Privacy Policy. We do not have direct access to your advertising identifier.
 
-#### Privacy Links & Policies
-* Learn more about Google's data practices: [Google Privacy Policy](https://policies.google.com/privacy)
-* How Google partners handle data: [Google Partner Sites Policy](https://policies.google.com/technologies/partner-sites)
+#### Privacy Resources:
+* [Google Privacy Policy](https://policies.google.com/privacy)
+* [How Google Uses Information From Sites or Apps That Use Our Services](https://policies.google.com/technologies/partner-sites)
 
-#### Opting Out of Targeted Advertising
-You can opt-out of personalized ads or reset your advertising identifier through your device settings:
-* **On Android:** Go to *Settings -> Google -> Ads -> Opt out of Ads Personalization* or *Reset advertising ID*.
-* **On iOS:** Go to *Settings -> Privacy -> Tracking -> Allow Apps to Request to Track* (toggle off).
+#### Managing & Opting Out of Targeted Advertising:
+* **Android:** *Settings -> Google -> Ads -> Delete advertising ID* or *Opt out of Ads Personalization*.
+* **iOS:** *Settings -> Privacy & Security -> Tracking -> Disable "Allow Apps to Request to Track"*.
 
 ---
 
 ### 5. Data Sharing & Disclosure
-We do not sell, trade, rent, or share any user data with third parties. Data is only collected and processed by third-party services (such as Google AdMob) as described in Section 4.
+We maintain strict limitations on data sharing:
+* **No Sale of Data:** We do not sell, rent, lease, or monetize user data with third-party data brokers.
+* **Transit Planning Insights:** We may share aggregated, fully anonymized statistical reports (e.g., total monthly searches for specific bus lines or passenger interest trends per bus station) with municipal authorities or certified public transport operators in Bijeljina for the sole purpose of improving public transit infrastructure and scheduling. These reports contain zero individual-level or identifiable data.
+* **Legal Compliance:** We may disclose data only if required by valid legal process, court order, or applicable law.
 
-We may disclose information if required to do so by law, or in response to valid requests by public authorities (e.g., a court or a government agency).
+---
 
-### 6. Children's Privacy
-Our App does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us so that we can take necessary actions.
+### 6. Data Security and Retention
+* **Security:** All network communications between the App and our backend servers are encrypted using modern Transport Layer Security (TLS/HTTPS).
+* **Retention:** Anonymized analytics events are stored in aggregated statistical format. Because no personal user profiles are created, stored records cannot be linked back to individual users.
 
-### 7. Changes to This Privacy Policy
-We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top. You are advised to review this Privacy Policy periodically for any changes.
+---
 
-### 8. Contact Us
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.
+### 7. User Rights & Data Deletion
+Under applicable data protection regulations (such as GDPR), you have rights regarding your personal data. Because BNBus does not collect personal identifiers or user accounts, we do not hold personal dossiers. However, if you have questions about our data practices or wish to submit an inquiry regarding data privacy, you may contact our privacy team at `support@mail.bwaregroup.xyz`.
 
+---
+
+### 8. Children's Privacy
+The App is intended for general audiences and does not knowingly collect personally identifiable information from children under the age of 13 (or under 16 in certain jurisdictions). If you believe a minor has inadvertently provided us with personal information, please contact us immediately, and we will promptly take appropriate corrective steps.
+
+---
+
+### 9. Changes to This Privacy Policy
+We may periodically update this Privacy Policy to reflect improvements to the App or changes in legal requirements. Any modifications will be posted directly within the App and published on this page with an updated "Last Updated" date. We encourage you to review this policy periodically.
+
+---
+
+### 10. Contact Us
+For any inquiries, feedback, or legal questions concerning this Privacy Policy, please contact:
+
+* **Entity:** BNBus / bWare Group
 * **Contact Email:** `support@mail.bwaregroup.xyz`
+* **Official Website:** `https://bnbus.bwaregroup.xyz`
 
+---
 ---
 
 ## Bosanski / Srpski / Hrvatski Verzija
 
 ### 1. O aplikaciji
-BNBus je pomoćna aplikacija za javni prevoz dizajnirana za grad **Bijeljina, Bosna i Hercegovina**. Aplikacija pruža offline i online redove vožnje, mape linija i informacije o stanicama kako bi pomogla korisnicima u snalaženju u javnom prevozu.
+BNBus je pomoćna aplikacija za javni gradski i prigradski prevoz namijenjena gradu **Bijeljina, Bosna i Hercegovina**. Aplikacija pruža offline i online redove vožnje, mape autobuskih linija, pregled dolazaka i informacije o autobuskim stajalištima kako bi građanima i posjetiocima olakšala kretanje i korišćenje javnog prevoza.
 
-### 2. Podaci koje prikupljamo i koristimo
-Vaša privatnost nam je na prvom mjestu i nastojimo prikupljati što je moguće manje ličnih podataka.
+### 2. Podaci koje prikupljamo i kako ih koristimo
+Vaša privatnost nam je prioritet. BNBus ne prodaje vaše podatke, ne vrši profilisanje korisnika i ne prati vaše aktivnosti van ove aplikacije.
 
-#### a) Lični podaci
-Ne zahtijevamo od vas da kreirate nalog, registrujete se ili date bilo kakve lične podatke (kao što su ime, e-mail adresa, broj telefona ili lista kontakata) da biste koristili Aplikaciju.
+#### a) Nema prikupljanja ličnih podataka (PII)
+Za korišćenje aplikacije BNBus **nije potrebna registracija, kreiranje korisničkog naloga**, niti unošenje ličnih podataka (kao što su ime, prezime, adresa stanovanja, e-mail adresa, broj telefona ili pristup kontaktima).
 
-#### b) Offline funkcionalnost i lokalno čuvanje podataka
-Glavne funkcije Aplikacije, kao što su pregled redova vožnje i pretraga stanica, dizajnirane su da rade bez internet veze. Sve preferencije ili keširani podaci (kao što su nedavno gledane linije ili stanice) čuvaju se lokalno na vašem uređaju i ne prenose se na naše servere.
+#### b) Anonimni analitički podaci i unapređenje javnog prevoza
+Kako bismo razumjeli potrebe putnika, uočili nedovoljno pokrivene relacije i kontinuirano radili na optimizaciji linija, redova vožnje i kvaliteta prevoza u Bijeljini, aplikacija prikuplja **anonimizovane analitičke podatke o korišćenju**.
 
-#### c) Mrežni podaci i internet veza
-Aplikacija zahtijeva pristup mreži za:
-* Učitavanje dinamičkih mapa (npr. CartoDB Voyager mape).
-* Prikazivanje oglasa putem Google AdMob servisa.
+Prikupljaju se sljedeći podaci:
+* **Pretrage u aplikaciji:** Pojmovi koje pretražujete prilikom traženja linija, stajališta ili lokacija.
+* **Pregledi sadržaja:** Pregledi pojedinačnih autobuskih linija, redova vožnje i polazaka sa stanica.
+* **Pregledi stajališta:** Informacije o interesovanju za određena stajališta i praćenju dolazaka autobusa.
+* **Planiranje ruta:** Polazne i odredišne tačke koje unesete u svrhu pronalaženja optimalne autobuske linije.
+* **Tehnički i dijagnostički podaci:** Nasumično generisani identifikator sesije (lokalno kreiran nasumični niz znakova koji nije vezan za hardverske brojeve, IMEI ili reklamni ID), platforma uređaja (npr. Android, Web) i verzija aplikacije.
+* **Vremenske oznake:** Vrijeme interakcije (UTC) u svrhu utvrđivanja perioda dana sa najvećom potražnjom za prevozom.
+
+**Svrha obrade podataka:**
+* Prilagođavanje i predlaganje poboljšanja redova vožnje, frekvencije polazaka i trasa autobusa prema stvarnim potrebama građana Bijeljine.
+* Unapređenje tačnosti podataka i korisničkog iskustva unutar aplikacije.
+* Uočavanje tehničkih grešaka, stabilnosti rada i optimizacija performansi aplikacije.
+
+**Garancija anonimnosti:**
+* Ovi podaci su u potpunosti pseudonimizovani i agregirani. Iz njih nije moguće utvrditi lični identitet niti prepoznati konkretnog korisnika.
+* Analitički podaci se ne povezuju sa eksternim bazama podataka niti marketinškim profilima.
+
+#### c) Podaci o lokaciji (GPS)
+Ukoliko aplikaciji odobrite pristup lokaciji (`ACCESS_FINE_LOCATION` ili `ACCESS_COARSE_LOCATION`), ti podaci se koriste **isključivo lokalno na vašem uređaju u realnom vremenu** kako bi se na mapi prikazala vaša trenutna pozicija i najbliža autobuska stajališta.
+* **Aplikacija ne bilježi, ne čuva i ne šalje vašu tačnu GPS lokaciju niti istoriju kretanja na servere.**
+* Dozvola za lokaciju je opciona. U svakom trenutku je možete odbiti ili isključiti u podešavanjima vašeg uređaja, pri čemu aplikacija i dalje zadržava punu funkcionalnost pregleda redova vožnje i pretrage linija.
+
+#### d) Offline rad i lokalno keširanje
+Glavne mogućnosti aplikacije dizajnirane su da funkcionišu i bez internet veze. Podaci o linijama i stajalištima čuvaju se lokalno na vašem telefonu/uređaju kako bi vam bili dostupni u svakom trenutku.
+
+#### e) Mrežni podaci i internet veza
+Aplikacija koristi internet vezu za:
+* Preuzimanje i prikaz kartografskih pločica (npr. CartoDB / OpenStreetMap).
+* Periodičnu automatsku sinhronizaciju izmjena u redu vožnje sa serverom.
+* Bezbjedno slanje paketa anonimnih analitičkih događaja putem šifrovane HTTPS veze.
+* Učitavanje oglasa putem Google AdMob mreže.
 
 ---
 
 ### 3. Dozvole na uređaju
-Da bi izvršavala svoje funkcije, Aplikacija zahtijeva sljedeće dozvole od vašeg mobilnog uređaja:
-* **`INTERNET`** (`android.permission.INTERNET`): Omogućava preuzimanje mapa i učitavanje oglasa.
-* **`ACCESS_NETWORK_STATE`** (`android.permission.ACCESS_NETWORK_STATE`): Omogućava provjeru da li je internet veza aktivna prije slanja mrežnih zahtjeva.
+Aplikacija može zatražiti sljedeće sistemske dozvole:
+* **`INTERNET`** (`android.permission.INTERNET`): Omogućava preuzimanje mapa, ažuriranje redova vožnje, slanje anonimne statistike i učitavanje oglasa.
+* **`ACCESS_NETWORK_STATE`** (`android.permission.ACCESS_NETWORK_STATE`): Omogućava aplikaciji provjeru postojanja internet veze prije slanja zahtjeva, čime se štedi baterija i mobilni protok.
+* **`ACCESS_COARSE_LOCATION` / `ACCESS_FINE_LOCATION`** *(Opciono)*: Koristi se isključivo lokalno na uređaju za prikaz korisnika na mapi i određivanje najbližih stajališta.
 
 ---
 
 ### 4. Usluge trećih strana i oglašavanje (Google AdMob)
-Koristimo Google AdMob za prikazivanje oglasa u Aplikaciji. AdMob je usluga mobilnog oglašavanja koju pruža Google LLC.
+Aplikacija koristi servis Google AdMob (Google LLC) za prikazivanje reklama.
 
-U svrhu prikazivanja oglasa, Google AdMob može prikupljati i obrađivati određene informacije sa vašeg uređaja, uključujući:
-* **Identifikatore uređaja** (kao što su Android oglašivački ID ili iOS IDFA).
-* **IP adresu** (koristi se za procjenu opšte lokacije i za bezbjednost/prevenciju prevara).
-* **Informacije o uređaju** (proizvođač, model, verzija operativnog sistema, jezik, itd.).
-* **Podatke o interakciji sa oglasima** (klikovi, pregledi).
+U svrhu isporuke oglasa i zaštite od zloupotreba, Google AdMob može automatski prikupljati i obrađivati tehničke podatke o uređaju:
+* **Oglašivački identifikator uređaja** (npr. Google Advertising ID ili iOS IDFA).
+* **IP adresu** (koristi se za približnu lokaciju na nivou regije i prevenciju prevara).
+* **Podatke o uređaju** (model, verzija operativnog sistema, jezik, operater).
+* **Podatke o interakciji sa oglasima** (broj prikaza, klikovi).
 
-Ove podatke prikuplja direktno Google AdMob SDK. Mi nemamo pristup tim podacima niti ih čuvamo. Google može koristiti ove podatke za prikaz personalizovanih ili nepersonalizovanih oglasa, u zavisnosti od podešavanja vašeg uređaja i lokalnih zakona (poput GDPR-a).
+Ove podatke prikuplja i obrađuje Google u skladu sa svojim pravilima privatnosti. Mi nemamo direktan uvid u vaš oglašivački identifikator.
 
-#### Korisni linkovi
-* Više detalja o Google praksama: [Google Pravila Privatnosti](https://policies.google.com/privacy)
-* Kako Google koristi podatke partnera: [Kako Google koristi podatke](https://policies.google.com/technologies/partner-sites)
+#### Korisni linkovi:
+* [Google Pravila Privatnosti](https://policies.google.com/privacy)
+* [Kako Google koristi podatke sa sajtova i aplikacija partnera](https://policies.google.com/technologies/partner-sites)
 
-#### Isključivanje ciljanog oglašavanja
-Možete isključiti personalizovane oglase ili resetovati svoj oglašivački identifikator putem podešavanja uređaja:
-* **Na Androidu:** Idite na *Podešavanja -> Google -> Oglasi -> Isključi personalizaciju* ili *Resetuj ID za oglašavanje*.
-* **Na iOS-u:** Idite na *Podešavanja -> Privatnost -> Praćenje -> Dozvoli aplikacijama da traže praćenje* (isključite).
+#### Kako isključiti personalizovane oglase:
+* **Android:** *Podešavanja -> Google -> Oglasi -> Obriši ID za oglašavanje* ili *Isključi personalizaciju oglasa*.
+* **iOS:** *Podešavanja -> Privatnost i bezbjednost -> Praćenje -> Isključite opciju dozvole praćenja*.
 
 ---
 
-### 5. Dijeljenje podataka
-Ne prodajemo, ne trgujemo, ne iznajmljujemo i ne dijelimo nikakve korisničke podatke sa trećim stranama. Podatke prikupljaju i obrađuju samo usluge trećih strana (kao što je Google AdMob) kao što je opisano u odjeljku 4.
+### 5. Dijeljenje i otkrivanje podataka
+* **Nema prodaje podataka:** Vaše podatke nikada ne prodajemo, ne iznajmljujemo i ne prosljeđujemo trećim stranama u marketinške svrhe.
+* **Unapređenje gradskog saobraćaja:** Zbirni, potpuno anonimizovani statistički izvještaji (npr. ukupan broj pretraga određene linije na mjesečnom nivou ili opšta frekventnost stajališta) mogu poslužiti za saradnju sa gradskim službama i prevoznicima u Bijeljini s ciljem poboljšanja javnog prevoza. Ovi izvještaji ne sadrže nijedan podatak o pojedinačnim korisnicima.
+* **Zakonske obaveze:** Podatke možemo otkriti isključivo ukoliko je to izričito naloženo važećim zakonom ili pravosnažnim nalogom nadležnog organa.
 
-Podatke možemo otkriti samo ako je to zakonski obavezno ili u odgovoru na validne zahtjeve javnih organa (npr. suda ili državne agencije).
+---
 
-### 6. Privatnost djece
-Naša Aplikacija se ne obraća nikome mlađem od 13 godina. Ne prikupljamo svjesno lične podatke od djece mlađe od 13 godina. Ako ste roditelj ili staratelj i svjesni ste da nam je vaše dijete dostavilo lične podatke, kontaktirajte nas kako bismo preduzeli potrebne mjere.
+### 6. Bezbjednost i čuvanje podataka
+* **Bezbjednost prenosa:** Sva komunikacija između aplikacije i servera odvija se preko bezbjednih, šifrovanih kanala (TLS/HTTPS).
+* **Period čuvanja:** Anonimizovani analitički podaci čuvaju se u formi zbirne statistike. Budući da se ne prikupljaju lični podaci, ne postoji evidencija koja se može dovesti u vezu sa konkretnim pojedincem.
 
-### 7. Promjene ovih pravila privatnosti
-Možemo povremeno ažurirati naša Pravila privatnosti. O svim promjenama ćemo vas obavijestiti postavljanjem novih Pravila privatnosti na ovu stranicu i ažuriranjem "Datuma stupanja na snagu" na vrhu. Savjetujemo vam da periodično pregledate ova Pravila privatnosti.
+---
 
-### 8. Kontaktirajte nas
-Ako imate bilo kakvih pitanja ili sugestija u vezi sa našim Pravilima privatnosti, slobodno nas kontaktirajte.
+### 7. Prava korisnika i brisanje podataka
+U skladu sa propisima o zaštiti podataka o ličnosti (uključujući GDPR načela), korisnici imaju pravo na uvid u način obrade svojih podataka. Kako BNBus ne vodi baze korisnika niti posjeduje vaše lične podatke, brisanje pojedinačnog korisničkog profila nije primjenjivo. Za sva pitanja ili nedoumice možete kontaktirati našu podršku na `support@mail.bwaregroup.xyz`.
 
-* **E-mail za kontakt:** `support@mail.bwaregroup.xyz`
+---
+
+### 8. Privatnost djece
+Aplikacija je namijenjena široj javnosti i svjesno ne prikuplja lične podatke od djece mlađe od 13 godina (odnosno mlađe od 16 godina gdje je to primjenjivo). Ukoliko roditelj ili staratelj posumnja da nam je dijete dostavilo podatke, molimo da nas kontaktirate kako bismo preduzeli hitne mjere.
+
+---
+
+### 9. Izmjene ovih Pravila privatnosti
+Zadržavamo pravo da povremeno ažuriramo ova Pravila privatnosti kako bismo ih uskladili sa razvojem aplikacije i zakonskim standardima. Svaka promjena biće objavljena unutar aplikacije i na ovoj stranici uz navođenje datuma izmjene.
+
+---
+
+### 10. Kontakt
+Ukoliko imate bilo kakva pitanja, prijedloge ili zahtjeve u vezi sa Politikom privatnosti, možete nam se obratiti putem:
+
+* **Izdavač:** BNBus / bWare Group
+* **E-mail:** `support@mail.bwaregroup.xyz`
+* **Veb-sajt:** `https://bnbus.bwaregroup.xyz`
